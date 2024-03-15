@@ -1,0 +1,26 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1710497455742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1710497480460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,17 @@\n </head>\n \n <body>\n   <app-root></app-root>\n+\n+\n+  <script src=\"assets/vendor/apexcharts/apexcharts.min.js\"></script>\n+  <script src=\"assets/vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>\n+  <script src=\"assets/vendor/chart.js/chart.umd.js\"></script>\n+  <script src=\"assets/vendor/echarts/echarts.min.js\"></script>\n+  <script src=\"assets/vendor/quill/quill.min.js\"></script>\n+  <script src=\"assets/vendor/simple-datatables/simple-datatables.js\"></script>\n+  <script src=\"assets/vendor/tinymce/tinymce.min.js\"></script>\n+  <script src=\"assets/vendor/php-email-form/validate.js\"></script>\n </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1710497511734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,7 +32,10 @@\n   <script src=\"assets/vendor/quill/quill.min.js\"></script>\n   <script src=\"assets/vendor/simple-datatables/simple-datatables.js\"></script>\n   <script src=\"assets/vendor/tinymce/tinymce.min.js\"></script>\n   <script src=\"assets/vendor/php-email-form/validate.js\"></script>\n+\n+  <!-- Template Main JS File -->\n+  <script src=\"assets/js/main.js\"></script>\n </body>\n \n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1710497455742,
+            "name": "Commit-0",
+            "content": "<!doctype html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\">\n  <title>Tscooter</title>\n  <base href=\"/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n\n  <!-- Vendor CSS Files -->\n  <link href=\"assets/vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n  <link href=\"assets/vendor/bootstrap-icons/bootstrap-icons.css\" rel=\"stylesheet\">\n  <link href=\"assets/vendor/boxicons/css/boxicons.min.css\" rel=\"stylesheet\">\n  <link href=\"assets/vendor/quill/quill.snow.css\" rel=\"stylesheet\">\n  <link href=\"assets/vendor/quill/quill.bubble.css\" rel=\"stylesheet\">\n  <link href=\"assets/vendor/remixicon/remixicon.css\" rel=\"stylesheet\">\n  <link href=\"assets/vendor/simple-datatables/style.css\" rel=\"stylesheet\">\n\n  <!-- Template Main CSS File -->\n  <link href=\"assets/css/style.css\" rel=\"stylesheet\">\n</head>\n\n<body>\n  <app-root></app-root>\n</body>\n\n</html>"
+        }
+    ]
+}

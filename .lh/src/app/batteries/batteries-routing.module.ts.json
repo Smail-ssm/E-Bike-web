@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/batteries/batteries-routing.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1711096713550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711440412923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,12 @@\n import { RouterModule, Routes } from '@angular/router';\n import { BatteriesListComponent } from './batteries-list/batteries-list.component';\n import { BatteriesStorageListComponent } from './batteries-storage-list/batteries-storage-list.component';\n import { BatteriesModelsListComponent } from './batteries-models-list/batteries-models-list.component';\n+import { BatteriesComponent } from './batteries.component';\n \n const routes: Routes = [\n+  { path:'',component:BatteriesComponent},\n   { path: 'batteries-list', component: BatteriesListComponent },\n   { path: 'batteries-storage-list', component: BatteriesStorageListComponent },\n   { path: 'batteries-model-list', component: BatteriesModelsListComponent },\n ];\n"
+                },
+                {
+                    "date": 1711441363800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,14 +5,17 @@\n import { BatteriesModelsListComponent } from './batteries-models-list/batteries-models-list.component';\n import { BatteriesComponent } from './batteries.component';\n \n const routes: Routes = [\n-  { path: '', component: BatteriesComponent },\n-  { path: 'batteries-list', component: BatteriesListComponent },\n-  { path: 'batteries-storage-list', component: BatteriesStorageListComponent },\n-  { path: 'batteries-model-list', component: BatteriesModelsListComponent },\n+  { path: 'home/dashbord', component: BatteriesComponent, // Utilisez le chemin parent\n+    children: [\n+      { path: 'batteries-list', component: BatteriesListComponent },\n+      { path: 'batteries-storage-list', component: BatteriesStorageListComponent },\n+      { path: 'batteries-model-list', component: BatteriesModelsListComponent },\n+      // Assurez-vous que les chemins des enfants correspondent également à 'home/dashbord'\n+    ]\n+  },\n ];\n-\n @NgModule({\n   imports: [RouterModule.forChild(routes)],\n   exports: [RouterModule],\n })\n"
+                }
+            ],
+            "date": 1711096713550,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { BatteriesListComponent } from './batteries-list/batteries-list.component';\nimport { BatteriesStorageListComponent } from './batteries-storage-list/batteries-storage-list.component';\nimport { BatteriesModelsListComponent } from './batteries-models-list/batteries-models-list.component';\n\nconst routes: Routes = [\n  { path:'batteries-list',component:BatteriesListComponent },\n  { path:'batteries-storage-list',component:BatteriesStorageListComponent },\n  { path:'batteries-model-list',component:BatteriesModelsListComponent },\n\n\n];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n  exports: [RouterModule]\n})\nexport class BatteriesRoutingModule { }\n"
+        }
+    ]
+}

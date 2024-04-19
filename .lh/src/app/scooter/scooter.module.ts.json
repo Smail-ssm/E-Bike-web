@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/app/scooter/scooter.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1711098772527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711098805376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,17 +5,9 @@\n import { ScooterListComponent } from './scooter-list/scooter-list.component';\n import { ModelListComponent } from './model-list/model-list.component';\n import { MapComponent } from './map/map.component';\n \n-\n @NgModule({\n-  declarations: [\n-    ScooterListComponent,\n-    ModelListComponent,\n-    MapComponent,\n-  ],\n-  imports: [\n-    CommonModule,\n-    ScooterRoutingModule\n-  ]\n+  declarations: [ScooterListComponent, ModelListComponent, MapComponent],\n+  imports: [CommonModule, ScooterRoutingModule],\n })\n-export class ScooterModule { }\n+export class ScooterModule {}\n"
+                },
+                {
+                    "date": 1711099161966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,10 @@\n import { ScooterRoutingModule } from './scooter-routing.module';\n import { ScooterListComponent } from './scooter-list/scooter-list.component';\n import { ModelListComponent } from './model-list/model-list.component';\n import { MapComponent } from './map/map.component';\n-import { ScooterComponent } from './scooter/scooter.component';\n \n @NgModule({\n-  declarations: [ScooterListComponent, ModelListComponent, MapComponent, ScooterComponent],\n+  declarations: [ScooterListComponent, ModelListComponent, MapComponent],\n   imports: [CommonModule, ScooterRoutingModule],\n })\n export class ScooterModule {}\n"
+                },
+                {
+                    "date": 1711099383435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n import { ScooterRoutingModule } from './scooter-routing.module';\n import { ScooterListComponent } from './scooter-list/scooter-list.component';\n import { ModelListComponent } from './model-list/model-list.component';\n import { MapComponent } from './map/map.component';\n+import { RouterModule } from '@angular/router';\n \n @NgModule({\n   declarations: [ScooterListComponent, ModelListComponent, MapComponent],\n   imports: [CommonModule, ScooterRoutingModule],\n"
+                }
+            ],
+            "date": 1711098772527,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { ScooterRoutingModule } from './scooter-routing.module';\nimport { ScooterListComponent } from './scooter-list/scooter-list.component';\nimport { ModelListComponent } from './model-list/model-list.component';\nimport { MapComponent } from './map/map.component';\n\n\n@NgModule({\n  declarations: [\n    ScooterListComponent,\n    ModelListComponent,\n    MapComponent,\n  ],\n  imports: [\n    CommonModule,\n    ScooterRoutingModule\n  ]\n})\nexport class ScooterModule { }\n"
+        }
+    ]
+}

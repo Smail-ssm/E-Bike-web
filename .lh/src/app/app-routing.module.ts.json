@@ -3,11 +3,31 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1710498730406,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1710755239469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { NgModule } from '@angular/core';\n import { RouterModule, Routes } from '@angular/router';\n import { HomepageComponent } from './homepage/homepage.component';\n \n-const routes: Routes = [{ path: 'home', component: HomepageComponent }];\n+const routes: Routes = [{ path: '', component: HomepageComponent }];\n \n @NgModule({\n   imports: [RouterModule.forRoot(routes)],\n   exports: [RouterModule],\n"
+                },
+                {
+                    "date": 1710755269517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { NgModule } from '@angular/core';\n import { RouterModule, Routes } from '@angular/router';\n import { HomepageComponent } from './homepage/homepage.component';\n \n-const routes: Routes = [{ path: '', component: HomepageComponent }];\n+const routes: Routes = [{ path: 'home', component: HomepageComponent }];\n \n @NgModule({\n   imports: [RouterModule.forRoot(routes)],\n   exports: [RouterModule],\n"
+                },
+                {
+                    "date": 1710755554130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n import { NgModule } from '@angular/core';\n import { RouterModule, Routes } from '@angular/router';\n import { HomepageComponent } from './homepage/homepage.component';\n+import { DashbordComponent } from './dashbord/dashbord.component';\n \n-const routes: Routes = [{ path: 'home', component: HomepageComponent }];\n+const routes: Routes = [{ path: 'home', component: HomepageComponent },\n+{path:'dashbord',component:DashbordComponent}];\n \n @NgModule({\n   imports: [RouterModule.forRoot(routes)],\n   exports: [RouterModule],\n"
+                },
+                {
+                    "date": 1710755749606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,12 @@\n import { HomepageComponent } from './homepage/homepage.component';\n import { DashbordComponent } from './dashbord/dashbord.component';\n \n const routes: Routes = [\n-  { path: 'home', component: HomepageComponent },\n-  { path: 'dashbord', component: DashbordComponent },\n+  { path: 'home', component: HomepageComponent,children :[\n+    { path: 'dashbord', component: DashbordComponent },\n+  ] },\n+  \n ];\n \n @NgModule({\n   imports: [RouterModule.forRoot(routes)],\n"
+                },
+                {
+                    "date": 1711008696004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n import { HomepageComponent } from './homepage/homepage.component';\n import { DashbordComponent } from './dashbord/dashbord.component';\n \n const routes: Routes = [\n+  \n   {\n     path: 'home',\n     component: HomepageComponent,\n     children: [{ path: 'dashbord', component: DashbordComponent }],\n"
                 }
             ],
             "date": 1710498730406,

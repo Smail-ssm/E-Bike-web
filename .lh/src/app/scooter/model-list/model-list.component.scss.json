@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/scooter/model-list/model-list.component.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1711975624917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1712055106260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,8 @@\n .pagetitle {\r\n   margin-top: 80px;\r\n }\r\n+.btn-group-sm .btn {\r\n+  padding: 2px !important;\r\n+  width: 24px !important;\r\n+  height: 24px !important;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1712055130168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,4 @@\n .pagetitle {\r\n   margin-top: 80px;\r\n }\r\n-.btn-group-sm .btn {\r\n-  padding: 2px !important;\r\n-  width: 24px !important;\r\n-  height: 24px !important;\r\n-}\r\n+\r\n"
+                }
+            ],
+            "date": 1711975624917,
+            "name": "Commit-0",
+            "content": ".pagetitle {\r\n    margin-top: 80px;\r\n  }\r\n  "
+        }
+    ]
+}

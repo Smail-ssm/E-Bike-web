@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/authentification/authentification.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1713263088301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1713263088301,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { AuthentificationRoutingModule } from './authentification-routing.module';\nimport { RegisterComponent } from './register/register.component';\nimport { LoginComponent } from './login/login.component';\nimport { FormsModule } from '@angular/forms';\n\n\n\n@NgModule({\n  declarations: [\n    RegisterComponent,\n    LoginComponent\n  ],\n  imports: [\n    CommonModule,\n    AuthentificationRoutingModule,\n    FormsModule\n  ]\n})\nexport class AuthentificationModule { }\n"
+        }
+    ]
+}

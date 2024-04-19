@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/scooter/map/map.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1711974768109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711974780649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { Component, OnInit, ElementRef } from '@angular/core';\n+import { Component, OnInit, ElementRef,ViewChild  } from '@angular/core';\n \n @Component({\n   selector: 'app-map',\n   templateUrl: './map.component.html',\n"
+                },
+                {
+                    "date": 1711974810170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,13 @@\n   templateUrl: './map.component.html',\n   styleUrls: ['./map.component.scss'],\n })\n export class MapComponent implements OnInit {\n+\n+\n   constructor() {}\n \n   ngOnInit(): void {}\n+\n+\n+  \n }\n"
+                }
+            ],
+            "date": 1711974768109,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit,ElementRef } from '@angular/core';\n\n@Component({\n  selector: 'app-map',\n  templateUrl: './map.component.html',\n  styleUrls: ['./map.component.scss']\n})\nexport class MapComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n"
+        }
+    ]
+}

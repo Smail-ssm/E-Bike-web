@@ -3,7 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: 'AIzaSyCqwsS11zTuFGy57Ja-E_XmrhvyEef9VKw',
+    authDomain: 'e-bike-b6281.firebaseapp.com',
+    databaseURL:
+      'https://e-bike-b6281-default-rtdb.europe-west1.firebasedatabase.app',
+    projectId: 'e-bike-b6281',
+    storageBucket: 'e-bike-b6281.appspot.com',
+    messagingSenderId: '692724012595',
+    appId: '1:692724012595:web:0987a41f27d60ff2cd7546',
+    measurementId: 'G-836ERZTQBK',
+  },
 };
 
 /*

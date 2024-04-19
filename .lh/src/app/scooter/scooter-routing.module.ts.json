@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/scooter/scooter-routing.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1711096599580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711097354239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,21 @@\n const routes: Routes = [\n   { path: 'scooter-list', component: ScooterListComponent },\n   { path: 'model-sccoter-list', component: ModelListComponent },\n   { path: 'map', component: MapComponent },\n+\n+  {\n+    path: '',\n+    component: ScooterListComponent,\n+    children: [\n+      { path: 'scooter-list', component: ScooterListComponent },\n+    \n+      { path: 'model-sccoter-list', component: ModelListComponent },\n+      {\n+        path: 'map', component: MapComponent\n+      },\n+    ],\n+  },\n ];\n \n @NgModule({\n   imports: [RouterModule.forChild(routes)],\n"
+                },
+                {
+                    "date": 1711097389077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,8 @@\n import { ModelListComponent } from './model-list/model-list.component';\n import { MapComponent } from './map/map.component';\n \n const routes: Routes = [\n-  { path: 'scooter-list', component: ScooterListComponent },\n-  { path: 'model-sccoter-list', component: ModelListComponent },\n-  { path: 'map', component: MapComponent },\n-\n   {\n     path: '',\n     component: ScooterListComponent,\n     children: [\n"
+                }
+            ],
+            "date": 1711096599580,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { ScooterListComponent } from './scooter-list/scooter-list.component';\nimport { ModelListComponent } from './model-list/model-list.component';\nimport { MapComponent } from './map/map.component';\n\nconst routes: Routes = [\n  { path :'scooter-list',component:ScooterListComponent },\n  { path:'model-sccoter-list',component:ModelListComponent },\n  { path:'map',component:MapComponent },\n\n];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n  exports: [RouterModule]\n})\nexport class ScooterRoutingModule { }\n"
+        }
+    ]
+}

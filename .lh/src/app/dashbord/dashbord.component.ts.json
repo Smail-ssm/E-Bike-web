@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/dashbord/dashbord.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1710756423215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1710756456054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,28 @@\n \n   ngOnInit(): void {\n     this.renderLineChart();\n   }\n+\n+  renderLineChart(): void {\n+    new Chart(document.querySelector('#lineChart'), {\n+      type: 'line',\n+      data: {\n+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],\n+        datasets: [{\n+          label: 'Line Chart',\n+          data: [65, 59, 80, 81, 56, 55, 40],\n+          fill: false,\n+          borderColor: 'rgb(75, 192, 192)',\n+          tension: 0.1\n+        }]\n+      },\n+      options: {\n+        scales: {\n+          y: {\n+            beginAtZero: true\n+          }\n+        }\n+      }\n+    });\n+  }\n }\n"
+                },
+                {
+                    "date": 1710756481290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import { Component, OnInit } from '@angular/core';\n+import Chart from 'chart.js'\n \n @Component({\n   selector: 'app-dashbord',\n   templateUrl: './dashbord.component.html',\n"
+                }
+            ],
+            "date": 1710756423215,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-dashbord',\n  templateUrl: './dashbord.component.html',\n  styleUrls: ['./dashbord.component.scss']\n})\nexport class DashbordComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n    this.renderLineChart();\n  }\n\n}\n"
+        }
+    ]
+}

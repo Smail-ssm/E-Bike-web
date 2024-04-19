@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/app/batteries/batteries.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1711440305654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711441546525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n+<app-home></app-home>\r\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1711441564414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-<app-home></app-home>\r\n+<app-homepage></app-homepage>\r\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1711441580233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,1 @@\n-<app-homepage></app-homepage>\r\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1711440305654,
+            "name": "Commit-0",
+            "content": "<p>batteries works!</p>\n<router-outlet></router-outlet>"
+        }
+    ]
+}

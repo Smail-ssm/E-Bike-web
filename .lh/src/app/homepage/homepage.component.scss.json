@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/app/homepage/homepage.component.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1711439196249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711439363054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,38 +1,13 @@\n-/* Pour les écrans de petite taille, afficher le menu comme une pile de liens */\r\n-@media (max-width: 768px) {\r\n-    .sidebar {\r\n-      position: fixed;\r\n-      top: 0;\r\n-      left: -250px; /* Cache initialement le menu */\r\n-      width: 250px;\r\n-      height: 100%;\r\n-      overflow-y: auto;\r\n-      transition: all 0.3s;\r\n-    }\r\n-    \r\n-    .sidebar.show {\r\n-      left: 0; /* Affiche le menu lorsque c'est nécessaire */\r\n-    }\r\n-    \r\n-    .sidebar-nav {\r\n-      padding-top: 20px;\r\n-    }\r\n-    \r\n-    .nav-link {\r\n-      padding: 10px 15px;\r\n-      display: block;\r\n-    }\r\n-    \r\n-    .nav-link.collapsed {\r\n-      padding: 10px 15px;\r\n-    }\r\n-    \r\n-    .nav-link i {\r\n-      margin-right: 10px;\r\n-    }\r\n-    \r\n-    .nav-content {\r\n-      padding-left: 20px;\r\n-    }\r\n+.sidebar {\r\n+    position: fixed;\r\n\\ No newline at end of file\n+    top: 0;\r\n+    left: -250px;\r\n+    width: 250px;\r\n+    height: 100%;\r\n+    overflow-y: auto;\r\n+    transition: all 0.3s;\r\n   }\r\n-  \n+  \r\n+  .sidebar.show {\r\n+    left: 0;\r\n+  }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1711439196249,
+            "name": "Commit-0",
+            "content": "/* Pour les écrans de petite taille, afficher le menu comme une pile de liens */\r\n@media (max-width: 768px) {\r\n    .sidebar {\r\n      position: fixed;\r\n      top: 0;\r\n      left: -250px; /* Cache initialement le menu */\r\n      width: 250px;\r\n      height: 100%;\r\n      overflow-y: auto;\r\n      transition: all 0.3s;\r\n    }\r\n    \r\n    .sidebar.show {\r\n      left: 0; /* Affiche le menu lorsque c'est nécessaire */\r\n    }\r\n    \r\n    .sidebar-nav {\r\n      padding-top: 20px;\r\n    }\r\n    \r\n    .nav-link {\r\n      padding: 10px 15px;\r\n      display: block;\r\n    }\r\n    \r\n    .nav-link.collapsed {\r\n      padding: 10px 15px;\r\n    }\r\n    \r\n    .nav-link i {\r\n      margin-right: 10px;\r\n    }\r\n    \r\n    .nav-content {\r\n      padding-left: 20px;\r\n    }\r\n  }\r\n  "
+        }
+    ]
+}

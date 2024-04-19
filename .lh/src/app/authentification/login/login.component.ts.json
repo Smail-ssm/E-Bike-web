@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/authentification/login/login.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1713262409406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1713262423044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,10 @@\n   templateUrl: './login.component.html',\n   styleUrls: ['./login.component.scss'],\n })\n export class LoginComponent implements OnInit {\n+\n+  email:string;\n   constructor() {}\n \n   ngOnInit() {}\n }\n"
+                },
+                {
+                    "date": 1713262443620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n   templateUrl: './login.component.html',\n   styleUrls: ['./login.component.scss'],\n })\n export class LoginComponent implements OnInit {\n-  email: string;\n+  email: string=\"\";\n+  password:string=\"\";\n   constructor() {}\n \n   ngOnInit() {}\n }\n"
+                }
+            ],
+            "date": 1713262409406,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-login',\n  templateUrl: './login.component.html',\n  styleUrls: ['./login.component.scss']\n})\nexport class LoginComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit() {\n  }\n\n}\n"
+        }
+    ]
+}

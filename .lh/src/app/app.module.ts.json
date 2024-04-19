@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/app.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1711008836712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711096208404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,12 +6,15 @@\n import { HomepageComponent } from './homepage/homepage.component';\n import { DashbordComponent } from './dashbord/dashbord.component';\n import { NgbModule } from '@ng-bootstrap/ng-bootstrap';\n import { AuthentificationModule } from './authentification/authentification.module';\n+import { BatteriesModule } from './batteries/batteries.module';\n+import { SubscriptionModule } from './subscription/subscription.module';\n+import { ScooterModule } from './scooter/scooter.module';\n \n @NgModule({\n   declarations: [AppComponent, HomepageComponent, DashbordComponent],\n-  imports: [BrowserModule, AppRoutingModule, NgbModule, AuthentificationModule],\n+  imports: [BrowserModule, AppRoutingModule, NgbModule, AuthentificationModule,BatteriesModule,SubscriptionModule,ScooterModule],\n   providers: [],\n   bootstrap: [AppComponent],\n })\n export class AppModule {}\n"
+                },
+                {
+                    "date": 1711097512382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,8 @@\n     BrowserModule,\n     AppRoutingModule,\n     NgbModule,\n     AuthentificationModule,\n-    BatteriesModule,\n     SubscriptionModule,\n     ScooterModule,\n   ],\n   providers: [],\n"
+                }
+            ],
+            "date": 1711008836712,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { HomepageComponent } from './homepage/homepage.component';\nimport { DashbordComponent } from './dashbord/dashbord.component';\nimport { NgbModule } from '@ng-bootstrap/ng-bootstrap';\nimport { AuthentificationModule } from './authentification/authentification.module';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    HomepageComponent,\n    DashbordComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    NgbModule,\n    AuthentificationModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n"
+        }
+    ]
+}

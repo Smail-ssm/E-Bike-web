@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/homepage/homepage.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1711439280429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711439463317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,14 @@\n   templateUrl: './homepage.component.html',\n   styleUrls: ['./homepage.component.scss'],\n })\n export class HomepageComponent implements OnInit {\n+\n+  isSidebarOpen = false;\n+\n   constructor() {}\n \n   ngOnInit(): void {}\n-  isSidebarOpen = false;\n \n   toggleSidebar() {\n     this.isSidebarOpen = !this.isSidebarOpen;\n   }\n"
+                },
+                {
+                    "date": 1711439470291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   templateUrl: './homepage.component.html',\n   styleUrls: ['./homepage.component.scss'],\n })\n export class HomepageComponent implements OnInit {\n-  isSidebarOpen = false;\n+  isSidebarOpen = true;\n \n   constructor() {}\n \n   ngOnInit(): void {}\n"
+                }
+            ],
+            "date": 1711439280429,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-homepage',\n  templateUrl: './homepage.component.html',\n  styleUrls: ['./homepage.component.scss']\n})\nexport class HomepageComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n  isSidebarOpen = false;\n\n  toggleSidebar() {\n    this.isSidebarOpen = !this.isSidebarOpen;\n  }\n\n}\n"
+        }
+    ]
+}

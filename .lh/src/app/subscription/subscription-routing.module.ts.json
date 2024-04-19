@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/app/subscription/subscription-routing.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1711096813152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1712222715227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { SubscriptionComponent } from './subscription/subscription.component';\n import { UsersPurchasesComponent } from './users-purchases/users-purchases.component';\n \n const routes: Routes = [\n-  { path: 'subscription', component: SubscriptionComponent },\n+  { path: 'subscrip', component: SubscriptionComponent },\n   { path: 'useres-purchases', component: UsersPurchasesComponent },\n ];\n \n @NgModule({\n"
+                }
+            ],
+            "date": 1711096813152,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { SubscriptionComponent } from './subscription/subscription.component';\nimport { UsersPurchasesComponent } from './users-purchases/users-purchases.component';\n\nconst routes: Routes = [\n  { path:'subscription',component:SubscriptionComponent },\n  { path:'useres-purchases',component:UsersPurchasesComponent },\n\n\n];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n  exports: [RouterModule]\n})\nexport class SubscriptionRoutingModule { }\n"
+        }
+    ]
+}

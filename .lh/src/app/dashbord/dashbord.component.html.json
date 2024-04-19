@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/dashbord/dashbord.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1710755516602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1710755799967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<div class=\"col-lg-6\">\n+<div class=\"col-lg-8\">\n     <div class=\"card\">\n         <div class=\"card-body\">\n             <h5 class=\"card-title\">Line Chart</h5>\n \n"
+                },
+                {
+                    "date": 1710755808427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<div class=\"col-lg-8\">\n+<div class=\"col-lg-\">\n     <div class=\"card\">\n         <div class=\"card-body\">\n             <h5 class=\"card-title\">Line Chart</h5>\n \n"
+                }
+            ],
+            "date": 1710755516602,
+            "name": "Commit-0",
+            "content": "<div class=\"col-lg-6\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">Line Chart</h5>\n\n        <!-- Line Chart -->\n        <canvas id=\"lineChart\" style=\"max-height: 400px;\"></canvas>\n        <script>\n          document.addEventListener(\"DOMContentLoaded\", () => {\n            new Chart(document.querySelector('#lineChart'), {\n              type: 'line',\n              data: {\n                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],\n                datasets: [{\n                  label: 'Line Chart',\n                  data: [65, 59, 80, 81, 56, 55, 40],\n                  fill: false,\n                  borderColor: 'rgb(75, 192, 192)',\n                  tension: 0.1\n                }]\n              },\n              options: {\n                scales: {\n                  y: {\n                    beginAtZero: true\n                  }\n                }\n              }\n            });\n          });\n        </script>\n        <!-- End Line CHart -->\n\n      </div>\n    </div>\n  </div>\n\n  <div class=\"col-lg-6\">\n    <div class=\"card\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">Bar CHart</h5>\n\n        <!-- Bar Chart -->\n        <canvas id=\"barChart\" style=\"max-height: 400px;\"></canvas>\n        <script>\n          document.addEventListener(\"DOMContentLoaded\", () => {\n            new Chart(document.querySelector('#barChart'), {\n              type: 'bar',\n              data: {\n                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],\n                datasets: [{\n                  label: 'Bar Chart',\n                  data: [65, 59, 80, 81, 56, 55, 40],\n                  backgroundColor: [\n                    'rgba(255, 99, 132, 0.2)',\n                    'rgba(255, 159, 64, 0.2)',\n                    'rgba(255, 205, 86, 0.2)',\n                    'rgba(75, 192, 192, 0.2)',\n                    'rgba(54, 162, 235, 0.2)',\n                    'rgba(153, 102, 255, 0.2)',\n                    'rgba(201, 203, 207, 0.2)'\n                  ],\n                  borderColor: [\n                    'rgb(255, 99, 132)',\n                    'rgb(255, 159, 64)',\n                    'rgb(255, 205, 86)',\n                    'rgb(75, 192, 192)',\n                    'rgb(54, 162, 235)',\n                    'rgb(153, 102, 255)',\n                    'rgb(201, 203, 207)'\n                  ],\n                  borderWidth: 1\n                }]\n              },\n              options: {\n                scales: {\n                  y: {\n                    beginAtZero: true\n                  }\n                }\n              }\n            });\n          });\n        </script>\n        <!-- End Bar CHart -->\n\n      </div>\n    </div>\n  </div>"
+        }
+    ]
+}

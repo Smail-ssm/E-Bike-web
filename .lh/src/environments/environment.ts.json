@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/environments/environment.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1713260362366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1713260438455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,17 +3,19 @@\n // The list of file replacements can be found in `angular.json`.\n \n export const environment = {\n   production: false,\n-  apiKey: 'AIzaSyCqwsS11zTuFGy57Ja-E_XmrhvyEef9VKw',\n-  authDomain: 'e-bike-b6281.firebaseapp.com',\n-  databaseURL:\n-    'https://e-bike-b6281-default-rtdb.europe-west1.firebasedatabase.app',\n-  projectId: 'e-bike-b6281',\n-  storageBucket: 'e-bike-b6281.appspot.com',\n-  messagingSenderId: '692724012595',\n-  appId: '1:692724012595:web:0987a41f27d60ff2cd7546',\n-  measurementId: 'G-836ERZTQBK',\n+  firebaseConfig : {\n+    apiKey: \"AIzaSyCqwsS11zTuFGy57Ja-E_XmrhvyEef9VKw\",\n+    authDomain: \"e-bike-b6281.firebaseapp.com\",\n+    databaseURL: \"https://e-bike-b6281-default-rtdb.europe-west1.firebasedatabase.app\",\n+    projectId: \"e-bike-b6281\",\n+    storageBucket: \"e-bike-b6281.appspot.com\",\n+    messagingSenderId: \"692724012595\",\n+    appId: \"1:692724012595:web:0987a41f27d60ff2cd7546\",\n+    measurementId: \"G-836ERZTQBK\"\n+  }\n+  \n };\n \n /*\n  * For easier debugging in development mode, you can import the following file\n"
+                }
+            ],
+            "date": 1713260362366,
+            "name": "Commit-0",
+            "content": "// This file can be replaced during build by using the `fileReplacements` array.\n// `ng build` replaces `environment.ts` with `environment.prod.ts`.\n// The list of file replacements can be found in `angular.json`.\n\nexport const environment = {\n  production: false,\n  apiKey: \"AIzaSyCqwsS11zTuFGy57Ja-E_XmrhvyEef9VKw\",\n  authDomain: \"e-bike-b6281.firebaseapp.com\",\n  databaseURL: \"https://e-bike-b6281-default-rtdb.europe-west1.firebasedatabase.app\",\n  projectId: \"e-bike-b6281\",\n  storageBucket: \"e-bike-b6281.appspot.com\",\n  messagingSenderId: \"692724012595\",\n  appId: \"1:692724012595:web:0987a41f27d60ff2cd7546\",\n  measurementId: \"G-836ERZTQBK\"\n};\n\n/*\n * For easier debugging in development mode, you can import the following file\n * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.\n *\n * This import should be commented out in production mode because it will have a negative impact\n * on performance if an error is thrown.\n */\n// import 'zone.js/plugins/zone-error';  // Included with Angular CLI.\n"
+        }
+    ]
+}

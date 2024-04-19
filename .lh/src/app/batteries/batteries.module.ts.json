@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/batteries/batteries.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1711097539578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1711097539578,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { BatteriesRoutingModule } from './batteries-routing.module';\nimport { BatteriesListComponent } from './batteries-list/batteries-list.component';\nimport { BatteriesModelsListComponent } from './batteries-models-list/batteries-models-list.component';\nimport { BatteriesStorageListComponent } from './batteries-storage-list/batteries-storage-list.component';\n\n\n@NgModule({\n  declarations: [\n    BatteriesListComponent,\n    BatteriesModelsListComponent,\n    BatteriesStorageListComponent,\n  ],\n  imports: [\n    CommonModule,\n    BatteriesRoutingModule\n  ]\n})\nexport class BatteriesModule { }\n"
+        }
+    ]
+}

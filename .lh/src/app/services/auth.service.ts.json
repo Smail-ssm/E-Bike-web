@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/app/services/auth.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1713261658447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1713261688773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Injectable } from '@angular/core';\n-import { AngularFireAuth } from'.angular/\n+import { AngularFireAuth } from '@angular/fire/auth'\n \n @Injectable({\n   providedIn: 'root'\n })\n"
+                },
+                {
+                    "date": 1713261710024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Injectable } from '@angular/core';\n-import { AngularFireAuth } from '@angular/fire/auth';\n+import { AngularFireAuth } from '@angular/fire/compat/auth';\n \n @Injectable({\n   providedIn: 'root',\n })\n"
+                },
+                {
+                    "date": 1713261721021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n @Injectable({\n   providedIn: 'root',\n })\n export class AuthService {\n-  constructor() {}\n+  constructor(private auth:) {}\n }\n"
+                }
+            ],
+            "date": 1713261658446,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\nimport { AngularFireAuth } from'.angular/\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class AuthService {\n\n  constructor() { }\n}\n"
+        }
+    ]
+}

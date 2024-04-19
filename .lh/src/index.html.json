@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1710765430267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1710765451713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,8 @@\n   <link href=\"assets/vendor/quill/quill.bubble.css\" rel=\"stylesheet\">\n   <link href=\"assets/vendor/remixicon/remixicon.css\" rel=\"stylesheet\">\n   <link href=\"assets/vendor/simple-datatables/style.css\" rel=\"stylesheet\">\n \n-  <link href=\"chemin/vers/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n \n \n   <!-- Template Main CSS File -->\n   <link href=\"assets/css/style.css\" rel=\"stylesheet\">\n"
+                },
+                {
+                    "date": 1711962367736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,18 @@\n   <link href=\"assets/vendor/remixicon/remixicon.css\" rel=\"stylesheet\">\n   <link href=\"assets/vendor/simple-datatables/style.css\" rel=\"stylesheet\">\n \n \n+  <link href=\"assets/vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n+  <link href=\"assets/vendor/bootstrap-icons/bootstrap-icons.css\" rel=\"stylesheet\">\n+  <link href=\"assets/vendor/boxicons/css/boxicons.min.css\" rel=\"stylesheet\">\n+  <link href=\"assets/vendor/quill/quill.snow.css\" rel=\"stylesheet\">\n+  <link href=\"assets/vendor/quill/quill.bubble.css\" rel=\"stylesheet\">\n+  <link href=\"assets/vendor/remixicon/remixicon.css\" rel=\"stylesheet\">\n+  <link href=\"assets/vendor/simple-datatables/style.css\" rel=\"stylesheet\">\n \n+\n+\n   <!-- Template Main CSS File -->\n   <link href=\"assets/css/style.css\" rel=\"stylesheet\">\n </head>\n \n"
+                },
+                {
+                    "date": 1711975216044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,11 @@\n   <script src=\"assets/vendor/simple-datatables/simple-datatables.js\"></script>\n   <script src=\"assets/vendor/tinymce/tinymce.min.js\"></script>\n   <script src=\"assets/vendor/php-email-form/validate.js\"></script>\n \n+  <script src=\"https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API\"></script>\n+\n+\n   <!-- Template Main JS File -->\n   <script src=\"assets/js/main.js\"></script>\n </body>\n \n"
+                },
+                {
+                    "date": 1711975272844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n   <script src=\"assets/vendor/simple-datatables/simple-datatables.js\"></script>\n   <script src=\"assets/vendor/tinymce/tinymce.min.js\"></script>\n   <script src=\"assets/vendor/php-email-form/validate.js\"></script>\n \n-  <script src=\"https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API\"></script>\n+  <script src=\"https://maps.googleapis.com/maps/api/js?key=36.8065, 10.1815\"></script>\n \n \n   <!-- Template Main JS File -->\n   <script src=\"assets/js/main.js\"></script>\n"
+                },
+                {
+                    "date": 1712061731468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,7 +49,19 @@\n \n \n   <!-- Template Main JS File -->\n   <script src=\"assets/js/main.js\"></script>\n+\n+  <script>\n+    // Script pour activer le menu réactif\n+    document.addEventListener(\"DOMContentLoaded\", function () {\n+        var sidebarToggle = document.querySelector(\".sidebar-toggle\");\n+        var sidebar = document.querySelector(\".sidebar\");\n+\n+        sidebarToggle.addEventListener(\"click\", function () {\n+            sidebar.classList.toggle(\"show\");\n+        });\n+    });\n+</script>\n </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1712229412878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,7 +61,30 @@\n         sidebar.classList.toggle(\"show\");\n       });\n     });\n   </script>\n+  <script>\n+    document.addEventListener(\"DOMContentLoaded\", function() {\n+        const sidebarLinks = document.querySelectorAll('.sidebar-nav .nav-link');\n+\n+        sidebarLinks.forEach(link => {\n+            link.addEventListener('click', function() {\n+                const parent = this.parentElement;\n+                const submenu = parent.querySelector('.nav-content');\n+                \n+                if (submenu) {\n+                    const isOpen = submenu.classList.contains('show');\n+                    \n+                    if (!isOpen) {\n+                        // Fermer toutes les autres sous-listes ouvertes\n+                        const openSubmenus = document.querySelectorAll('.nav-content.show');\n+                        openSubmenus.forEach(sub => sub.classList.remove('show'));\n+                    }\n+                }\n+            });\n+        });\n+    });\n+</script>\n+\n </body>\n \n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1712229544239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,30 +61,9 @@\n         sidebar.classList.toggle(\"show\");\n       });\n     });\n   </script>\n-  <script>\n-    document.addEventListener(\"DOMContentLoaded\", function() {\n-        const sidebarLinks = document.querySelectorAll('.sidebar-nav .nav-link');\n \n-        sidebarLinks.forEach(link => {\n-            link.addEventListener('click', function() {\n-                const parent = this.parentElement;\n-                const submenu = parent.querySelector('.nav-content');\n-                \n-                if (submenu) {\n-                    const isOpen = submenu.classList.contains('show');\n-                    \n-                    if (!isOpen) {\n-                        // Fermer toutes les autres sous-listes ouvertes\n-                        const openSubmenus = document.querySelectorAll('.nav-content.show');\n-                        openSubmenus.forEach(sub => sub.classList.remove('show'));\n-                    }\n-                }\n-            });\n-        });\n-    });\n-</script>\n \n </body>\n \n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1710765430267,
+            "name": "Commit-0",
+            "content": "<!doctype html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\">\n  <title>Tscooter</title>\n  <base href=\"/\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n\n  <!-- Vendor CSS Files -->\n  <link href=\"assets/vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n  <link href=\"assets/vendor/bootstrap-icons/bootstrap-icons.css\" rel=\"stylesheet\">\n  <link href=\"assets/vendor/boxicons/css/boxicons.min.css\" rel=\"stylesheet\">\n  <link href=\"assets/vendor/quill/quill.snow.css\" rel=\"stylesheet\">\n  <link href=\"assets/vendor/quill/quill.bubble.css\" rel=\"stylesheet\">\n  <link href=\"assets/vendor/remixicon/remixicon.css\" rel=\"stylesheet\">\n  <link href=\"assets/vendor/simple-datatables/style.css\" rel=\"stylesheet\">\n\n  <link href=\"chemin/vers/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n\n\n  <!-- Template Main CSS File -->\n  <link href=\"assets/css/style.css\" rel=\"stylesheet\">\n</head>\n\n<body>\n  <app-root></app-root>\n\n\n  <script src=\"assets/vendor/apexcharts/apexcharts.min.js\"></script>\n  <script src=\"assets/vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>\n  <script src=\"assets/vendor/chart.js/chart.umd.js\"></script>\n  <script src=\"assets/vendor/echarts/echarts.min.js\"></script>\n  <script src=\"assets/vendor/quill/quill.min.js\"></script>\n  <script src=\"assets/vendor/simple-datatables/simple-datatables.js\"></script>\n  <script src=\"assets/vendor/tinymce/tinymce.min.js\"></script>\n  <script src=\"assets/vendor/php-email-form/validate.js\"></script>\n\n  <!-- Template Main JS File -->\n  <script src=\"assets/js/main.js\"></script>\n</body>\n\n</html>"
+        }
+    ]
+}

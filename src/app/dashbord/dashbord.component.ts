@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 
 @Component({
   selector: 'app-dashbord',
@@ -6,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashbord.component.scss'],
 })
 export class DashbordComponent implements OnInit {
+  nomUtilisateur: string="";
+  emailUtilisateur: string="";
+  passwordUtilisateur: string="";
+  confirmPassword: string="";
   constructor() {}
 
   ngOnInit() {}
+
+  ajouterUtilisateur() {
+    
+  }
+  
+  
 }

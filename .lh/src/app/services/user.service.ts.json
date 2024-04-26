@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/app/services/user.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1713800937949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1713800950191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n   providedIn: 'root'\n })\n export class UserService {\n \n-  constructor(private angularFireStore:) { }\n+  constructor(private angularFireStore:AngularFireS) { }\n }\n"
+                },
+                {
+                    "date": 1713800978228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n @Injectable({\n   providedIn: 'root',\n })\n export class UserService {\n-  constructor(private angularFireStore: AngularFireS) {}\n+  constructor(private angularFireStore: AngularFirestore) {}\n }\n"
+                },
+                {
+                    "date": 1713801048806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import { Injectable } from '@angular/core';\n+import { AngularFirestore } from '@angular/fire/firestore';\n+import { Observable } from 'rxjs';\n \n @Injectable({\n   providedIn: 'root',\n })\n"
+                }
+            ],
+            "date": 1713800937949,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class UserService {\n\n  constructor(private angularFireStore:) { }\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/app/user/user.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1713866399337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1713866481967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,9 @@\n-export interface User {}\r\n+export interface User {\r\n+\r\n+    id:string;\r\n+    name:string;\r\n+    email:string;\r\n+    password:string;\r\n+    tel:string;\r\n+    adresse:string ;\r\n+}\r\n"
+                }
+            ],
+            "date": 1713866399337,
+            "name": "Commit-0",
+            "content": "export interface User {\r\n    \r\n}"
+        }
+    ]
+}

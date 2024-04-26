@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/user/user.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1713868502067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1713868620726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n import { AngularFirestore } from '@Angular/fire/compat/firestore';\n import { Injectable } from '@angular/core';\n-import { User } from './user';\n \n @Injectable({\n   providedIn: 'root',\n })\n"
+                },
+                {
+                    "date": 1713869823981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { AngularFirestore } from '@Angular/fire/compat/firestore';\n import { Injectable } from '@angular/core';\n-import { User } from '../user/user';\n+import { User } from './user';\n \n @Injectable({\n   providedIn: 'root',\n })\n"
+                }
+            ],
+            "date": 1713868502067,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\nimport { AngularFirestore } from '@Angular/fire/compat/firestore';\nimport { User } from './user';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class UserService {\n  constructor(private angularFireStore: AngularFirestore) {}\n\n  //add user\n  addUser(user: User) {\n    user.id = this.angularFireStore.createId();\n    return this.angularFireStore.collection('/user').add(user);\n  }\n\n  //getAll user\n  getAllUser() {\n    return this.angularFireStore.collection('/user').snapshotChanges();\n  }\n\n  //delete user\n  deleteUser(user: User) {\n    return this.angularFireStore.doc('/user/' + user.id).delete();\n  }\n\n  //update user\n\n  updateUser(user: User) {\n    this.deleteUser(user);\n    this.addUser(user);\n  }\n}\n"
+        }
+    ]
+}

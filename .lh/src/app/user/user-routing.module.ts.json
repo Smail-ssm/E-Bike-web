@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/user/user-routing.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1713782817089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1713782895684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n import { NgModule } from '@angular/core';\n import { RouterModule, Routes } from '@angular/router';\n import { ListuserComponent } from './listuser/listuser.component';\n \n-const routes: Routes = [{ path: 'list-users', component: ListuserComponent }];\n+const routes: Routes = [{ path: 'list-users', component: ListuserComponent },\n+  \n+];\n \n @NgModule({\n   imports: [RouterModule.forChild(routes)],\n   exports: [RouterModule],\n"
+                },
+                {
+                    "date": 1713784181648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,13 @@\n import { NgModule } from '@angular/core';\n import { RouterModule, Routes } from '@angular/router';\n import { ListuserComponent } from './listuser/listuser.component';\n+import { UserComponent } from './user.component';\n \n-const routes: Routes = [{ path: 'list-users', component: ListuserComponent }];\n+const routes: Routes = [\n+  { path: '', component: UserComponent },\n+  { path: 'list-users', component: ListuserComponent }\n+];\n \n @NgModule({\n   imports: [RouterModule.forChild(routes)],\n   exports: [RouterModule],\n"
+                }
+            ],
+            "date": 1713782817089,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { ListuserComponent } from './listuser/listuser.component';\n\nconst routes: Routes = [\n  {path:'list-users',component:ListuserComponent}\n];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n  exports: [RouterModule]\n})\nexport class UserRoutingModule { }\n"
+        }
+    ]
+}

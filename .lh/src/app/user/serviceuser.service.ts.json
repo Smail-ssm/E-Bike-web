@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/user/serviceuser.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1713870989933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1713871001903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n import { Injectable } from '@angular/core';\n+import { AngularFirestore } from '@Angular/fire/compat/firestore';\n \n+\n @Injectable({\n   providedIn: 'root'\n })\n export class ServiceuserService {\n"
+                },
+                {
+                    "date": 1713871018877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,11 @@\n   providedIn: 'root',\n })\n export class ServiceuserService {\n   constructor(private angularFireStore: AngularFirestore) {}\n+\n+\n+   //getAll user\n+   getAllUser() {\n+    return this.angularFireStore.collection('/user').snapshotChanges();\n+  }\n }\n"
+                }
+            ],
+            "date": 1713870989933,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class ServiceuserService {\n\n  constructor(private angularFireStore: AngularFirestore) { }\n}\n"
+        }
+    ]
+}

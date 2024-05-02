@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/subscription/subscription-list/subscription-list.component.spec.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1714646268591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1714646268591,
+            "name": "Commit-0",
+            "content": "import { ComponentFixture, TestBed } from '@angular/core/testing';\n\nimport { SubscriptionComponent } from './subscription-list.component';\n\ndescribe('SubscriptionComponent', () => {\n  let component: SubscriptionComponent;\n  let fixture: ComponentFixture<SubscriptionComponent>;\n\n  beforeEach(async () => {\n    await TestBed.configureTestingModule({\n      declarations: [ SubscriptionComponent ]\n    })\n    .compileComponents();\n\n    fixture = TestBed.createComponent(SubscriptionComponent);\n    component = fixture.componentInstance;\n    fixture.detectChanges();\n  });\n\n  it('should create', () => {\n    expect(component).toBeTruthy();\n  });\n});\n"
+        }
+    ]
+}

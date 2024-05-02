@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/subscription/subscription.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1714645911482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1714645926610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n import { SubscriptionComponent } from './subscription/subscription.component';\n import { UsersPurchasesComponent } from './users-purchases/users-purchases.component';\n \n @NgModule({\n-  declarations: [SubscriptionComponent, UsersPurchasesComponent],\n+  declarations: [SubscriptionComponent, UsersPurchasesComponent,SubscriptionComponent],\n   imports: [CommonModule, SubscriptionRoutingModule, RouterModule],\n })\n export class SubscriptionModule {}\n"
+                },
+                {
+                    "date": 1714646000608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n @NgModule({\n   declarations: [\n     SubscriptionComponent,\n     UsersPurchasesComponent,\n-    SubscriptionComponent,\n   ],\n   imports: [CommonModule, SubscriptionRoutingModule, RouterModule],\n })\n export class SubscriptionModule {}\n"
+                }
+            ],
+            "date": 1714645911482,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { RouterModule } from '@angular/router';\n\n\nimport { SubscriptionRoutingModule } from './subscription-routing.module';\nimport { SubscriptionComponent } from './subscription/subscription.component';\nimport { UsersPurchasesComponent } from './users-purchases/users-purchases.component';\n\n\n@NgModule({\n  declarations: [\n    SubscriptionComponent,\n    UsersPurchasesComponent\n  ],\n  imports: [\n    CommonModule,\n    SubscriptionRoutingModule,\n    RouterModule\n  ]\n})\nexport class SubscriptionModule { }\n"
+        }
+    ]
+}

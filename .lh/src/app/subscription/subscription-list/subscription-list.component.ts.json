@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/subscription/subscription-list/subscription-list.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1714646287866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1714646287866,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-subscription-list',\n  templateUrl: './subscription-list.component.html',\n  styleUrls: ['./subscription-list.component.scss']\n})\nexport class SubscriptionComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n"
+        }
+    ]
+}

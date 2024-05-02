@@ -1,19 +1,13 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { SubscriptionRoutingModule } from './subscription-routing.module';
-import { SubscriptionComponent } from './subscription/subscription.component';
-import { UsersPurchasesComponent } from './users-purchases/users-purchases.component';
-
+import { SubscriptionComponent } from './subscription.component';
+import { SubscriptionListComponent } from './subscription-list/subscription-list.component';
 
 @NgModule({
-  declarations: [
-    SubscriptionComponent,
-    UsersPurchasesComponent
-  ],
-  imports: [
-    CommonModule,
-    SubscriptionRoutingModule
-  ]
+  declarations: [SubscriptionComponent, SubscriptionListComponent],
+  imports: [CommonModule, SubscriptionRoutingModule, RouterModule],
 })
-export class SubscriptionModule { }
+export class SubscriptionModule {}

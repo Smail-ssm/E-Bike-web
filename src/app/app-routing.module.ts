@@ -10,7 +10,7 @@ const routes: Routes = [
     path: 'home',
     component: HomepageComponent,
     children: [
-      { path: 'dashboard', component: DashbordComponent }, 
+      { path: 'dashboard', component: DashbordComponent },
 
       { path: 'clients', component: ClientsComponent },
       {

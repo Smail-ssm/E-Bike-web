@@ -35,29 +35,33 @@
                             <div class="mb-3">
                                 <label for="nomUtilisateur" class="form-label">Name
                                     :</label>
-                                <input type="text" class="form-control" id="nomUtilisateur" name="nomUtilisateur">
+                                <input type="text" class="form-control" id="nomUtilisateur" name="nomUtilisateur"
+                                    [(ngModel)]="nomUtilisateur">
                             </div>
                             <div class="mb-3">
                                 <label for="emailUtilisateur" class="form-label">Email
                                     :</label>
-                                <input type="email" class="form-control" id="emailUtilisateur" name="emailUtilisateur">
+                                <input type="email" class="form-control" id="emailUtilisateur" name="emailUtilisateur"
+                                    [(ngModel)]="emailUtilisateur">
                             </div>
                             <div class="mb-3">
                                 <label for="passwordUtilisateur" class="form-label">Password :</label>
-                                <input type="password" class="form-control" id="passwordUtilisateur">
+                                <input type="password" class="form-control" id="passwordUtilisateur"
+                                    [(ngModel)]="passwordUtilisateur" name="passwordUtilisateur">
                             </div>
 
                             <div class="mb-3">
                                 <label for="confirmPassword" class="form-label">Confirm
                                     Password :</label>
-                                <input type="password" class="form-control" id="confirmPassword">
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    [(ngModel)]="confirmPassword" name="confirmPassword">
                             </div>
                             <!-- Fin des champs du formulaire -->
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-primary" onclick="ajouterUtilisateur()">Ajouter</button>
+                        <button type="button" class="btn btn-primary" (click)="addUser()">Ajouter</button>
                     </div>
                 </div>
             </div>
@@ -103,88 +107,27 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr data-index="0">
-                                    <td>1</td>
-                                    <td>Unity Pugh</td>
-                                    <td>9958</td>
+                                <tr data-index="0" *ngFor="let user of userList">
+                                    <td>{{user.id}}</td>
+                                    <td>{{user.name}}</td>
+                                    <td>{{user.email}}</td>
                                     <td>
                                         <div class="btn-group btn-group-sm d-flex" role="group" aria-label="Actions">
 
-                                            <button type="button" class="btn btn-info"><i
-                                                    class="bi bi-pencil-square"></i></button>
+                                            <button type="button" class="btn btn-info"><i class="bi bi-pencil-square"
+                                                    (click)="updateUser(user)"></i></button>
                                             <span style="margin: 0 5px;"></span>
-                                            <button type="button" class="btn btn-danger"><i
-                                                    class="ri-delete-bin-line"></i></button>
+                                            <button type="button" class="btn btn-danger"><i class="ri-delete-bin-line"
+                                                    (click)="deleteUser(user)"></i></button>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr data-index="1">
-                                    <td>2</td>
-                                    <td>Theodore Duran</td>
 
-                                    <td>test 1</td>
-                                    <td>
-                                        <div class="btn-group btn-group-sm d-flex" role="group" aria-label="Actions">
-
-
-
-                                            <button type="button" class="btn btn-info"><i
-                                                    class="bi bi-pencil-square"></i></button>
-                                            <span style="margin: 0 5px;"></span>
-                                            <button type="button" class="btn btn-danger"><i
-                                                    class="ri-delete-bin-line"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr data-index="2">
-                                    <td>3</td>
-                                    <td>Kylie Bishop</td>
-                                    <td>test 2</td>
-                                    <td>
-                                        <div class="btn-group btn-group-sm d-flex" role="group" aria-label="Actions">
-
-                                            <button type="button" class="btn btn-info"><i
-                                                    class="bi bi-pencil-square"></i></button>
-                                            <span style="margin: 0 5px;"></span>
-                                            <button type="button" class="btn btn-danger"><i
-                                                    class="ri-delete-bin-line"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr data-index="3">
-                                    <td>4</td>
-                                    <td>Willow Gilliam</td>
-                                    <td>test 2</td>
-                                    <td>
-                                        <div class="btn-group btn-group-sm d-flex" role="group" aria-label="Actions">
-
-                                            <button type="button" class="btn btn-info"><i
-                                                    class="bi bi-pencil-square"></i></button>
-                                            <span style="margin: 0 5px;"></span>
-                                            <button type="button" class="btn btn-danger"><i
-                                                    class="ri-delete-bin-line"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr data-index="4">
-                                    <td>5</td>
-                                    <td>Blossom Dickerson</td>
-
-                                    <td>test 2</td>
-                                    <td>
-                                        <div class="btn-group btn-group-sm d-flex" role="group" aria-label="Actions">
-
-                                            <button type="button" class="btn btn-info"><i
-                                                    class="bi bi-pencil-square"></i></button>
-                                            <span style="margin: 0 5px;"></span>
-                                            <button type="button" class="btn btn-danger"><i
-                                                    class="ri-delete-bin-line"></i></button>
-                                        </div>
-                                    </td>
-                                </tr>
 
                             </tbody>
                         </table>
+
+
                     </div>
                     <div class="datatable-bottom">
                         <div class="datatable-info">Showing 1 to 5 of 100 entries</div>

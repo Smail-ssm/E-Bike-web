@@ -13,7 +13,7 @@ import { BatteriesModule } from './batteries/batteries.module';
 import { ClientsComponent } from './clients/clients.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
-import { provideRouter } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { provideRouter } from '@angular/router';
     SubscriptionModule,
     ScooterModule,
     BatteriesModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
   providers: [],

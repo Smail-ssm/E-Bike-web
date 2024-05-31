@@ -11,7 +11,7 @@ export class HomepageComponent implements OnInit {
 
   constructor(private auth: AuthService) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {}
 
   toggleSidebar() {
     this.isSidebarOpen = !this.isSidebarOpen;

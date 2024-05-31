@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/user/user.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1715087079130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1715087079130,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\n\r\nimport { UserRoutingModule } from './user-routing.module';\r\nimport { UserComponent } from './user.component';\r\nimport { ListuserComponent } from './listuser/listuser.component';\r\nimport { FormsModule } from '@angular/forms';\r\n\r\n\r\n@NgModule({\r\n  declarations: [\r\n    UserComponent,\r\n    ListuserComponent\r\n  ],\r\n  imports: [\r\n    CommonModule,\r\n    UserRoutingModule,\r\n    FormsModule\r\n  ]\r\n})\r\nexport class UserModule { }\r\n"
+        }
+    ]
+}

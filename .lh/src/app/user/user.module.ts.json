@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1715087079130,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1717505638859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,12 @@\n \r\n import { UserRoutingModule } from './user-routing.module';\r\n import { UserComponent } from './user.component';\r\n import { ListuserComponent } from './listuser/listuser.component';\r\n-import { FormsModule } from '@angular/forms';\n+import { FormsModule, ReactiveFormsModule } from '@angular/forms';\r\n import { ProfilComponent } from './profil/profil.component';\r\n \r\n @NgModule({\r\n   declarations: [UserComponent, ListuserComponent, ProfilComponent],\r\n-  imports: [CommonModule, UserRoutingModule, FormsModule],\r\n+  imports: [CommonModule, UserRoutingModule, FormsModule, ReactiveFormsModule],\r\n })\r\n export class UserModule {}\r\n"
                 }
             ],
             "date": 1715087079130,

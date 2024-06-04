@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/user/profil/profil.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1717505524432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1717505558167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <div class=\"profile-container\">\n     <h2>Profil de l'utilisateur</h2>\n-    <form [formGroup]=\"profileForm\" (ngSubmit)=\"updateUser()\">\n+    <form [formGroup]=\"profileForm\" >\n         <div class=\"form-group\">\n             <label for=\"name\">Nom:</label>\n             <input type=\"text\" id=\"name\" formControlName=\"name\" class=\"form-control\" placeholder=\"Enter your name\" />\n             <div *ngIf=\"profileForm.get('name').invalid && profileForm.get('name').touched\" class=\"error\">\n"
+                },
+                {
+                    "date": 1717505776135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,24 +3,24 @@\n     <form [formGroup]=\"profileForm\">\n         <div class=\"form-group\">\n             <label for=\"name\">Nom:</label>\n             <input type=\"text\" id=\"name\" formControlName=\"name\" class=\"form-control\" placeholder=\"Enter your name\" />\n-            <div *ngIf=\"profileForm.get('name').invalid && profileForm.get('name').touched\" class=\"error\">\n+            <div *ngIf=\"profileForm.get('name')!.invalid && profileForm.get('name')!.touched\" class=\"error\">\n                 Le nom est requis.\n             </div>\n         </div>\n         <div class=\"form-group\">\n             <label for=\"email\">Email:</label>\n             <input type=\"email\" id=\"email\" formControlName=\"email\" class=\"form-control\"\n                 placeholder=\"Enter your email\" />\n-            <div *ngIf=\"profileForm.get('email').invalid && profileForm.get('email').touched\" class=\"error\">\n+            <div *ngIf=\"profileForm.get('email')!.invalid && profileForm.get('email')!.touched\" class=\"error\">\n                 Un email valide est requis.\n             </div>\n         </div>\n         <div class=\"form-group\">\n             <label for=\"age\">Âge:</label>\n             <input type=\"number\" id=\"age\" formControlName=\"age\" class=\"form-control\" placeholder=\"Enter your age\" />\n-            <div *ngIf=\"profileForm.get('age').invalid && profileForm.get('age').touched\" class=\"error\">\n+            <div *ngIf=\"profileForm.get('age')!.invalid && profileForm.get('age')!.touched\" class=\"error\">\n                 Un âge valide est requis.\n             </div>\n         </div>\n         <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"profileForm.invalid\">Mettre à jour</button>\n"
+                }
+            ],
+            "date": 1717505524432,
+            "name": "Commit-0",
+            "content": "<div class=\"profile-container\">\n    <h2>Profil de l'utilisateur</h2>\n    <form [formGroup]=\"profileForm\" (ngSubmit)=\"updateUser()\">\n      <div class=\"form-group\">\n        <label for=\"name\">Nom:</label>\n        <input\n          type=\"text\"\n          id=\"name\"\n          formControlName=\"name\"\n          class=\"form-control\"\n          placeholder=\"Enter your name\"\n        />\n        <div *ngIf=\"profileForm.get('name').invalid && profileForm.get('name').touched\" class=\"error\">\n          Le nom est requis.\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"email\">Email:</label>\n        <input\n          type=\"email\"\n          id=\"email\"\n          formControlName=\"email\"\n          class=\"form-control\"\n          placeholder=\"Enter your email\"\n        />\n        <div *ngIf=\"profileForm.get('email').invalid && profileForm.get('email').touched\" class=\"error\">\n          Un email valide est requis.\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"age\">Âge:</label>\n        <input\n          type=\"number\"\n          id=\"age\"\n          formControlName=\"age\"\n          class=\"form-control\"\n          placeholder=\"Enter your age\"\n        />\n        <div *ngIf=\"profileForm.get('age').invalid && profileForm.get('age').touched\" class=\"error\">\n          Un âge valide est requis.\n        </div>\n      </div>\n      <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"profileForm.invalid\">Mettre à jour</button>\n    </form>\n  </div>\n  "
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+<div class="profile-container">
+    <h2>Profil de l'utilisateur</h2>
+    <form [formGroup]="profileForm">
+        <div class="form-group">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" formControlName="name" class="form-control" placeholder="Enter your name" />
+            <div *ngIf="profileForm.get('name')!.invalid && profileForm.get('name')!.touched" class="error">
+                Le nom est requis.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" formControlName="email" class="form-control"
+                placeholder="Enter your email" />
+            <div *ngIf="profileForm.get('email')!.invalid && profileForm.get('email')!.touched" class="error">
+                Un email valide est requis.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="age">Âge:</label>
+            <input type="number" id="age" formControlName="age" class="form-control" placeholder="Enter your age" />
+            <div *ngIf="profileForm.get('age')!.invalid && profileForm.get('age')!.touched" class="error">
+                Un âge valide est requis.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="profileForm.invalid" (click)="updateUser()">Mettre à
+            jour</button>
+    </form>
+</div>

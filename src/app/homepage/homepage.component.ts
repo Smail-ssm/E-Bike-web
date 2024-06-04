@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
+import { UserService, User } from '../user/user.service';
 
 @Component({
   selector: 'app-homepage',
@@ -8,10 +9,15 @@ import { AuthService } from '../services/auth.service';
 })
 export class HomepageComponent implements OnInit {
   isSidebarOpen = true;
+  user!: User;
 
-  constructor(private auth: AuthService) {}
+  constructor(private auth: AuthService, private userService: UserService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.userService.user$.subscribe((user) => {
+      this.user = user;
+    });
+  }
 
   toggleSidebar() {
     this.isSidebarOpen = !this.isSidebarOpen;

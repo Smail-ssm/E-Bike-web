@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/user/profil/profil.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1717505398524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1717505432971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,15 @@\n import { Component, OnInit } from '@angular/core';\n+import { FormBuilder, FormGroup } from '@angular/forms';\n \n @Component({\n   selector: 'app-profil',\n   templateUrl: './profil.component.html',\n   styleUrls: ['./profil.component.scss'],\n })\n export class ProfilComponent implements OnInit {\n-  constructor() {}\n+  profileForm: FormGroup;\n+  constructor(private fb:FormBuilder) {}\n \n   ngOnInit(): void {\n     this.profileForm = this.fb.group({\n       name: ['', Validators.required],\n"
+                },
+                {
+                    "date": 1717505445106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Component, OnInit } from '@angular/core';\n-import { FormBuilder, FormGroup } from '@angular/forms';\n+import { FormBuilder, FormGroup,Validators} from '@angular/forms';\n \n @Component({\n   selector: 'app-profil',\n   templateUrl: './profil.component.html',\n"
+                }
+            ],
+            "date": 1717505398524,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-profil',\n  templateUrl: './profil.component.html',\n  styleUrls: ['./profil.component.scss']\n})\nexport class ProfilComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n\n    this.profileForm = this.fb.group({\n      name: ['', Validators.required],\n      email: ['', [Validators.required, Validators.email]],\n      age: [null, [Validators.required, Validators.min(0)]]\n    });\n\n    // Initialise le formulaire avec les données de l'utilisateur\n    this.userService.user$.subscribe(user => {\n      this.profileForm.patchValue(user);\n    });\n  }\n\n}\n"
+        }
+    ]
+}

@@ -10,6 +10,8 @@ import Swal from 'sweetalert2';
 })
 export class UserComponent implements OnInit {
   userList: User[] = [];
+  filteredUserList: User[] = [];
+  searchQuery: string = '';
   userObj: any = {
     name: '',
     email: '',
@@ -36,11 +38,11 @@ export class UserComponent implements OnInit {
           data.id = e.payload.doc.id;
           return data;
         });
-
-        console.log('list useres', this.userList); // Déplacez le console.log à l'intérieur du bloc de succès
+        this.filterUsers(); // Appliquer le filtre initialement
+        console.log('Liste des utilisateurs', this.userList); // Déplacez le console.log à l'intérieur du bloc de succès
       },
       (err) => {
-        alert('erreur lors de la récupération des données');
+        alert('Erreur lors de la récupération des données');
       }
     );
   }
@@ -83,6 +85,35 @@ export class UserComponent implements OnInit {
         console.log(this.userObj);
       });
   }
+
+  // Méthode pour filtrer(FIND) les utilisateurs en fonction de la recherche
+
+  filterUsers() {
+    if (this.isSearchDirty()) {
+      this.filteredUserList = this.userList.filter((user) =>
+        user.name.toLowerCase().includes(this.searchQuery.toLowerCase())
+      );
+    } else {
+      this.filteredUserList = this.userList;
+    }
+  }
+  // Méthode pour filtrer les utilisateurs en fonction de la recherche
+  /*  filterUsers() {
+    if (this.isSearchDirty()) {
+      // Vérifier si le champ de recherche est sale (dirty)
+      this.filteredUserList = this.userList.filter((user) =>
+        user.name.toLowerCase().includes(this.searchQuery.toLowerCase())
+      );
+    } else {
+      this.filteredUserList = this.userList; // Afficher tous les utilisateurs si le champ de recherche n'est pas sale
+    }
+  } */
+
+  // Méthode pour vérifier si le champ de recherche est sale (dirty)
+  isSearchDirty(): boolean {
+    return !!this.searchQuery.trim(); // Vérifie si le champ de recherche contient du texte
+  }
+
   // update User
   updateUser(user: User) {}
 

@@ -7,6 +7,7 @@ import { ModelListComponent } from './model-list/model-list.component';
 import { MapComponent } from './map/map.component';
 import { RouterModule } from '@angular/router';
 import { ScooterComponent } from './scooter.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,6 @@ import { ScooterComponent } from './scooter.component';
     MapComponent,
     ScooterComponent,
   ],
-  imports: [CommonModule, ScooterRoutingModule, RouterModule],
+  imports: [CommonModule, ScooterRoutingModule, RouterModule,FormsModule, ReactiveFormsModule],
 })
 export class ScooterModule {}
